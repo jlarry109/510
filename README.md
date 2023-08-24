@@ -8,7 +8,7 @@ As presented in the environment installation instructions, you should create a p
 To create a local environment for programming and to execute the python notebooks, execute the following commands in terminal window:
 ```
 cd ~/fintech510
-python3.11 -m venv/class
+python3.11 -m venv classenv
 source classenv/bin/activate
 pip install --upgrade pip setuptools wheel
 pip install -r fintech510-studentrepository/notebooks/requirements.txt
@@ -17,7 +17,7 @@ This creates and activates a Python virtual environment within installed librari
 
 If you close your terminal window, you will need to execute
 ```
-source ~/fintech510/class/bin/activer
+source ~/fintech510/class/bin/activate
 ```
 to activate the environment.
 ## Starting the notebooks
@@ -26,3 +26,4 @@ Once you have activiated the course environment, execute the following to start 
 cd ~fintech510/fintech510-studentrepository/notebooks
 jupyter notebook
 ```
+This should open a browser window with the list of notebooks.
