@@ -1,0 +1,33 @@
+1. Write python code to convert the 100 degrees Celsuis to Fahrenheit.
+   c = 100
+   f = c * 9/5 + 32
+   print (f)
+
+2. 2. An internet coffee shop sells coffee for \$12.85 per pound.  The cost of shipping is \$3.25 per pound plus a flat
+   handling fee of \$2.50 per order.  Using a variable of `coffee_lbs` write a python statement that will compute the order    cost and assign to a variable of `cost`.  Then print that variable to the console.
+   coffee_lbs = 2.0
+   cost = 12.85 * coffee_lbs + 3.25 * coffee_lbs + 2.50
+   print(cost)
+ 
+
+3. Lookup the formula for [periodic compounding](https://en.wikipedia.org/wiki/Compound_interest#Periodic_compounding). Write a snippet of python code that you can use the set the variables to apply the compounding formula.  This should be similar to the Fahrenheit conversion above, but you just have a few more variables.  You should have the following variables with P, r, n, and t where 
+    - A is the final amount
+    - P is the original principal sum
+    - r is the nominal annual interest rate
+    - n is the compounding frequency
+    - t is the overall length of time the interest is applied (expressed using the same time units as r, usually years).
+   P = 1000.0
+   r = 0.07
+   n = 12
+   t = 35
+   A = P * (1 + r/n)**(n*t)
+   print(A)       
+    
+   
+4. How would you find the additional information for decimal class(type) within Python?  
+   help(Decimal)
+   Note: you may have to have import the module for this to run: from decimal import *
+
+5. How would you find the additional information for decimal class(type) on the web?  
+    a. Use the search box on the Python documentation: https://docs.python.org/3/
+    b. Use Google: https://www.google.com/search?q=decimal+python

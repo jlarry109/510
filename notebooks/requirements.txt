@@ -1,0 +1,11 @@
+seaborn
+google
+scikit-learn
+certifi
+pendulum
+chardet
+jupyter
+jupyterlab
+coverage
+pyaml
+sqlalchemy
