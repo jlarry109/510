@@ -32,5 +32,13 @@ To compile:
    cd .. - changes to the parent directory
 3. To compile hello.cpp: g++ -std=c++17 hello.cpp
 
+To use the run icon in VS Code:
+1. On Windows, ensure you are using WSL or Docker
+2. Select the run icon in the upper right-hand corner
+3.For the configuration, use "C/C++: g++ build and debug active file"
+4. On MacOS, you may need to give permissions so that the process can access the documents folder
+5. The output will show in the "Debug Console"
+
+
 Once you have succeeded in creating, compiling, and running the code in your environment, submit the code in the 'hello_cpp' Gradescope assignment for credit.
 
