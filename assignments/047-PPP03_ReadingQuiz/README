@@ -1,4 +1,4 @@
-Read Chapter 3 in 'Programming: Principles and Practice using C++',
+Read Chapter 3 in 'Programming: Principles and Practice using C++'
 
 Answer the following questions in the Gradescope Assignment:
 
@@ -10,5 +10,5 @@ Answer the following questions in the Gradescope Assignment:
 6. What are typical sizes for a char, an int, and a double?
 7. What is the difference between = and ==?
 8. What is a definition?
-9. What is string concatenation and how do you make it work in C++?
+9. What is string concatenation? How do you perform string concatenation in C++?
 10. Why can conversion from double to int be a bad thing?
