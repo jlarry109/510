@@ -39,6 +39,15 @@ To use the run icon in VS Code:
 4. On MacOS, you may need to give permissions so that the process can access the documents folder
 5. The output will show in the "Debug Console"
 
+Note:
+Rather than using an "import" statement such as in Python, C++ uses the 
+"#include" directive to bring in the contents of another file into the 
+current file before compilation. Primarily, this allows us to access code 
+written in other files or libraries. The "std_lib_facilities.h" file actually 
+includes many other files and is a convenient mechanism for us to use as we 
+get started with C++.  Over time, we will replace this file with the 
+standard includes. "std_lib_facilities.h" needs to reside in the same 
+directory as your source code.
 
 Once you have succeeded in creating, compiling, and running the code in your environment, submit the code in the 'hello_cpp' Gradescope assignment for credit.
 
