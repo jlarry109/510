@@ -6,7 +6,7 @@ You will need to write each step into its own file as specified.
 Each step will be separately graded.
 
 Notes:
-- Use ctrl-c to stop execution of a progam if neccessary.
+- Use ctrl-c to stop the execution of a program if necessary.
 - Read through the steps first before starting.
 
 1. Write a program that consists of a while-loop that continually reads in 
