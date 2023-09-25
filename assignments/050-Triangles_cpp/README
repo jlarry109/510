@@ -27,4 +27,4 @@ command "diff". To see more details on how run diff, execute: man diff
 
 If the files are the same, nothing will be printed to the console.
 
-One the your output is correct, submit your triangles.cpp to Gradescope.
+Once your output is correct, submit your triangles.cpp to Gradescope.
