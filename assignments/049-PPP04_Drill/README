@@ -57,7 +57,7 @@ Notes:
 
 6. Now change the body of the loop so that it reads just one double each loop.
    Define two variables to keep track of which is the smallest and which is 
-   the largest value you have seen so far. Each loop iteration, write out the 
+   the largest value read so far. For each loop iteration, write out the 
    value entered. If it’s the smallest so far, write " smallest so far" after 
    the number. If it is the largest so far, write the " largest so far" after 
    the number. Only one newline should be printed each loop.
@@ -120,7 +120,7 @@ Notes:
     Make the necessary code changes.
     Compile, execute, and manually validate the program.
 
-11. Before writing out the values from the vector, sort them increasing order.
+11. Before writing out the values from the vector, sort them in increasing order.
     See section 4.6.3 for an example.
 
     Use drill4-11.cpp for your program.
@@ -131,4 +131,4 @@ Notes:
 Once you have completed a step, you may want to submit, your completed
 drill source code files to Gradescope for evaluation.
 
-Once you have competed all of the steps, submit the 11 drill files to Gradescope.
+Once you have completed all of the steps, submit the 11 drill files to Gradescope.
