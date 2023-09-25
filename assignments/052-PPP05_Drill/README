@@ -1,11 +1,11 @@
 This directory contains 10 small progragrams that contain various
-code fragments. Some of the framents run successfully; others produce errors. 
+code fragments. Some of the fragments run successfully; others produce errors. 
 Study the inputs and outputs to see why. You should make the necessary
 change to have each program print "Success!" to standard output.
 
 To stop execution of a program, use 'ctrl-c'.
 
-Foreach fraqment:
+For each fragment:
 1. Attempt to compile the program: g++ -std=c++17 filename.cpp
 2. Correct the any coding issues as necessary:
    - track which fragments produced syntax errors (question in reading quiz)
