@@ -49,5 +49,6 @@ get started with C++.  Over time, we will replace this file with the
 standard includes. "std_lib_facilities.h" needs to reside in the same 
 directory as your source code.
 
-Once you have succeeded in creating, compiling, and running the code in your environment, submit the code in the 'hello_cpp' Gradescope assignment for credit.
+Once you have succeeded in creating, compiling, and running the code in your environment, 
+submit the code in the 'hello_cpp' Gradescope assignment for credit.
 

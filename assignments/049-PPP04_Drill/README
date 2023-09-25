@@ -25,7 +25,7 @@ Notes:
    Use drill4-1.cpp as the starting point.
    
    To compile: g++ -std=c++17 drill4-1.cpp
-   Execute: ./a.aout
+   Execute: ./a.out
    Validate your program works with a variety of inputs
 
 2. Change the program to write out - 

@@ -25,6 +25,9 @@ You can then compare your output to the expected output with the
 command "diff". To see more details on how run diff, execute: man diff
     diff expected.txt mine.txt
 
+expected.txt and mine.txt should be in the same directory. If not, 
+you must use the correct relative or absolute pathnames.
+
 If the files are the same, nothing will be printed to the console.
 
 Once your output is correct, submit your triangles.cpp to Gradescope.
