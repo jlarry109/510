@@ -3,16 +3,16 @@
 using namespace std;
 
 void someFunction(vector<int> vec) {
-  for (int i = 0; i < vec.size(); i++) {
-    cout << vec[i] << " ";
+  for (auto value : vec) {
+    cout << value << " ";
   }
   cout << endl;
 }
 
 vector<int> anotherFunction(vector<int> vec) {
-  for (int step = 0; step < vec.size() - 1; step++) {
-    int min_idx = step;
-    for (int i = step + 1; i < vec.size(); i++) {
+  for (size_t step = 0; step < vec.size() - 1; step++) {
+    size_t min_idx = step;
+    for (size_t i = step + 1; i < vec.size(); i++) {
 
       if (vec[i] > vec[min_idx])
         min_idx = i;
