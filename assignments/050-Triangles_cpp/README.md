@@ -1,15 +1,15 @@
 # Triangles
 Open the triangles.cpp file you have in this directory.
-You will see two functions:  `printTriangle`` and `main``.
+You will see two functions:  `printTriangle` and `main`.
 
 The `printTriangle` function has an algorithm written as comments, but without code.
 Translate this algorithm to code.
 
-`main`` contains three output statements which print out a triangle
+`main` contains three output statements which print out a triangle
 with height 4, and the total number of stars in that triangle (returned
-by the `printTriangle`` function).
+by the `printTriangle` function).
 
-`main`` also contains a comment asking you to write a few more statements
+`main` also contains a comment asking you to write a few more statements
 to do the same thing for a triangle of height 7.
 Add the code to do this.
 
