@@ -37,9 +37,9 @@ or read sequentially. C++ provides the "insertion"/"output" operator << to
 send data to an output stream.  To modify the flow of those characters, we 
 can place special method calls into the stream.  To output data in the 
 correct format for this assignment, use the following line:
-
+```
 cout << "Age " << setw(3) << years << " month " << setw(2) << months << " you have $" << fixed << setprecision(2) << balance << "\n";
- 
+``` 
 
 Steps:
   1. Create a file called "retirement.cpp". Include the usual header file (std_lib_facilities.h) at the top.
