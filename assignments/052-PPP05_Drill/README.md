@@ -6,7 +6,7 @@ change to have each program print "Success!" to standard output.
 To stop execution of a program, use 'ctrl-c'.
 
 For each fragment:
-1. Attempt to compile the program: g++ -std=c++17 filename.cpp
+1. Attempt to compile the program: `g++ -std=c++17 filename.cpp`
 2. Correct the any coding issues as necessary:
    - track which fragments produced syntax errors (question in reading quiz)
    - track which fragments produced type errors (question in reading quiz)
