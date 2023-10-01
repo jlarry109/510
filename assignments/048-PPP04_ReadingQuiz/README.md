@@ -1,4 +1,4 @@
-Read Chapter 4 in 'Programming: Principles and Practice using C++'
+Read Chapter 4 in _Programming: Principles and Practice using C++_
 
 Answer the following questions:
 
