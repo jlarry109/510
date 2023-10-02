@@ -1,4 +1,5 @@
-Read Chapter 8 in 'Programming: Principles and Practice using C++'
+Read Chapter 8 in _Programming: Principles and Practice using C++_
+
 Submit your answers to the Gradescope assignment.
 
 1. What is the difference between a declaration and a definition?
@@ -9,11 +10,11 @@ Submit your answers to the Gradescope assignment.
 6. What is the difference between pass-by-value and pass-by-reference?
 7. What is a swap()?
 8. Which of the following is standard-conforming C++: 
-	functions within functions, 
-	functions within classes, 
-	classes within classes, 
-	classes within functions?
-	
-	Answer Yes/No for each case. 
+   - functions within functions, 
+   - functions within classes, 
+   - classes within classes, 
+   - classes within functions?
+   
+   Answer Yes/No for each case. 
 9. What is the purpose of a namespace?
 10. How does a namespace differ from a class?

@@ -1,4 +1,4 @@
-Read Chapter 5 in 'Programming: Principles and Practice using C++' 
+Read Chapter 5 in _Programming: Principles and Practice using C++_
 Complete PPP05 - Drill
 
 Submit your answers for the following reading questions in the relevant 
@@ -13,7 +13,7 @@ Gradescope assignment:
 5. How do you know if a result is plausible? What techniques do you have to 
    answer such questions?
 6. Describe the process of how exceptions are thrown and caught.
-7. Why, with a vector called v, is v[v.size()] a range error? What would be 
+7. Why, with a vector called `v`, is `v[v.size()]` a range error? What would be 
    the result of calling this?
 8. Review your ppp_ch5_drill exercise, and list the fragments that produced syntax errors.
 9. Review your ppp_ch5_drill exercise, and list the fragments that produced type errors.

@@ -1,5 +1,8 @@
-Write a program using a single file containing three namespaces X, Y, and Z
+Write a program using a single file containing three namespaces `X`, `Y`, and `Z`
 so that the following main() works correctly:
+
+```c++
+#include <iostream>
 
 int main()
 {
@@ -17,15 +20,17 @@ int main()
     print();    // print Y’s var
     X::print(); // print X’s var
 }
+```
 
-Each namespace needs to define a variable called var and a function called print() that outputs the appropriate var using cout.
+Each namespace needs to define a variable called var and a function called `print()` that outputs the appropriate `var` using `cout`.
 
 Use main.cpp as your starting point.
 Expected output:
+```
 7
 9
 11
 9
 7
-
+```
 Once your program matches the expected output, submit main.cpp to Gradescope.
