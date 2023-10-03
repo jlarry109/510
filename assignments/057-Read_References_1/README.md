@@ -1,3 +1,10 @@
+1. Create a file "answer.txt".
+2. Execute the code under the instructions by hand as demonstrated with the memory/trace diagrams in class.
+3. Write the output in your "answer.txt" file.
+4. Take a picture of your diagram.
+5. Submit both your answer.txt file and your diagram (this can be png/jpg/pdf) for grading.
+
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -5,13 +12,12 @@
 
 void swap(int& i1, int& i2)
 {
-          int temp = i1;	// copy i1’s value to temp
-          i1 = i2;		// copy i2’s value to i1
-          i2 = temp;		// copy i1’s old value to i2
+          int temp = i1;  // copy i1’s value to temp
+          i1 = i2;		  // copy i2’s value to i1
+          i2 = temp;	  // copy i1’s old value to i2
 }
-
 void printv(std::vector<int> data)
-{
+ {
 	std::cout << "data = {";
 	for (int i=0; i < data.size(); i++) {
 		std::cout << data[i];
@@ -21,7 +27,6 @@ void printv(std::vector<int> data)
 	}
 	std::cout << "}\n";
 }
-
 int main()
 {
 	std::vector<int> data {10, 9, 8, 7, 6};
@@ -34,3 +39,4 @@ int main()
 	}
 	printv(data);
 }
+```

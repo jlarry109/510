@@ -4,4 +4,4 @@ test: code.cpp
 	g++ $(CFLAGS) -o test code.cpp
 
 clean:
-	rm -f test* *~
+	rm -rf test* *~
