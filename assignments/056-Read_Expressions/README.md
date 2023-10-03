@@ -7,14 +7,14 @@ Read Expressions:
 3. Take a picture of your diagram.
 4. Compile the program by using the provided Makefile.  
    (The C++ retirement assignment discussed how to do this.)
-5. Execute the program: ./test
+5. Execute the program: `./test`
 6. Compare the output to your expected output.  Make any corrections.
 7. Submit answer.txt and your diagram (this can be png/jpg/pdf) to Gradescope.
 
 Notes:
-Something(int _x): x(_x) is a constructor that is called when a new 
+`Something(int _x): x(_x)` is a constructor that is called when a new 
 instance of Something is created. This constructor initializes the state 
 of the object, contained in the variable x to the parameter _x
 
-~Something() is a destructor that is called when an object goes out of 
+`~Something()` is a destructor that is called when an object goes out of 
 scope or a programmer explicitly destroys an object with the `delete` keyword.
