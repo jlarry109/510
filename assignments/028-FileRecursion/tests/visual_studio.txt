@@ -1,0 +1,1 @@
+On the menu bar, select Tools > Command Line > Developer Command Prompt or Developer PowerShell.

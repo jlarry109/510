@@ -2,6 +2,8 @@ from curses.ascii import isalpha
 import sys
 from sys import argv
 
+
+
 def encrypt(f, key):
     """Encrypts the contents of the file object (assumed to be ASCII text)"""
     while True:
@@ -34,3 +36,4 @@ if __name__ == "__main__":
     
     with open(argv[2]) as f:
         encrypt(f, key)
+

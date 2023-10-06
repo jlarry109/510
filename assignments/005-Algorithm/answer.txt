@@ -1,0 +1,16 @@
+-36 -35 -32 -27 -20 -11 0 13 28 45 64 85 108 133 160 189 220 253
+
+int * numerical_sequence(int n) {
+  //if N == 0, return NOTHING(NULL)
+  if(n == 0) return NULL;
+  //Allocate space for 3 * n contiguous elements, call it arr
+  int * arr = malloc((3 * n) * sizeof(*arr));
+  //Count from 0 to 3 * N exclusively (call it i) 
+  for(int i = 0; i < 3 * n; i++) {
+    //and for each i:
+    //put the value of  -(n*n) + (i * i) inside position i of arr
+    arr[i] = (-1 * n * n) + (i * i);
+  }
+  //arr is the answer
+  return arr;
+}

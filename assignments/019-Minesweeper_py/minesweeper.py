@@ -46,6 +46,12 @@ def make_board(width, height, num_mines):
     Once that is done, "num_mines" are randomly placed on the board
     by calling add_random_mine repeatedly.
     """
+    board = [[SQUARE_UNKNOWN for _ in range(width)] for _ in range(height)]
+    
+    for i in range(num_mines):
+        add_random_mine(board)
+    return board
+    
 
 
 def print_board(board):
@@ -89,7 +95,16 @@ def count_mines(board, x, y):
     mine.
     Make sure you do not go outside of the list bounds
     """
-
+    num_mines = 0
+    x_start, x_end, y_start, y_end = x, x, y, y
+    x_start, x_end  = x - 1 if x > 0 else x_start ,   x + 1 if x < len(board[0]) - 1 else x_end
+    y_start,  y_end = y - 1 if y > 0 else y_start,   y + 1 if y < len(board) - 1 else y_end
+    
+    for i in range(y_start, y_end + 1):
+        for j in range(x_start, x_end + 1):
+            if ( not(i == y and j == x) and has_mine(board[i][j])):
+                num_mines += 1
+    return num_mines
 
 def click(board, x, y):
     if x < 0 or x > board_width(board) or y < 0 or y > board_height(board):
@@ -109,13 +124,21 @@ def check_win(board):
     """
     Game is won when no squares have the value SQUARE_UNKNOWN
     """
-
+    for i in range(len(board)):
+        for j in range(len(board[0])):
+            if board[i][j] == SQUARE_UNKNOWN:
+                return False
+    return True
 
 def reveal_mines(board):
     """
     Change SQUARE_HAS_MINE to SQUARE_KNOWN_MINE for all places on the board
     """
-
+    for i in range(len(board)):
+        for j in range(len(board[0])):
+            if board[i][j] == SQUARE_HAS_MINE:
+                board[i][j] = SQUARE_KNOWN_MINE
+    return board
 
 def read_int(prompt):
     while True:

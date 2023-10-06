@@ -22,5 +22,40 @@ class TestCreditCardValidator(unittest.TestCase):
         """Ensure an invalid american express number fails"""
         self.assertFalse(validate("377024907644532"))                   
 
+    def test_invalid_length_below_visa(self):
+        self.assertFalse(validate("426398264026299"))
+        
+    def test_invalid_length_below_mastercard(self):
+        self.assertFalse(validate("542523340109903"))
+        
+    def test_invalid_length_below_american_express(self):
+        self.assertFalse(validate("374245455401269"))
+        
+    def test_invalid_length_above_visa(self):
+        self.assertFalse(validate("42639826402629911"))
+        
+    def test_invalid_length_above_mastercard(self):
+        self.assertFalse(validate("54252334010990311"))
+        
+    def test_invalid_length_above_american_express(self):
+        self.assertFalse(validate("3742454554012612"))
+        
+    def test_invalid_character_at_last_position(self):
+        self.assertFalse(validate("377024907644535a"))
+    
+    def test_invalid_character_at_first_position(self):
+        self.assertFalse(validate("a377024907644537"))
+        
+    def test_invalid_type_float(self):
+        self.assertFalse(validate("542.05233430109903"))
+    
+    def test_invalid_type_list(self):
+        self.assertFalse(validate("42052334301099039"))
+    
+    def test_invalid_empty_string(self):
+        self.assertFalse(validate(""))
+        
+    def test_invalid_empty_string(self):
+        self.assertFalse(validate("5663982640269299"))
 if __name__ == '__main__':
     unittest.main(argv=['unittest','TestCreditCardValidator'], verbosity=2, exit=False)

@@ -1,7 +1,7 @@
-class Employee:
-    """Employee"""
-    __id = 100  # must change name otherwise a recursive overflow error occurs
+"""Employee"""
+__id = 100  # must change name otherwise a recursive overflow error occurs
 
+class Employee:
     def __init__(self, name, job_title):
         self.__id = Employee.__id
         Employee.__id += 1
@@ -36,3 +36,4 @@ class Employee:
 
     def calculate_pay(self):
         raise NotImplementedError("Employee subclasses must implement calculate_pay()")
+
