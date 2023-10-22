@@ -1,4 +1,4 @@
-Read Chapter 20, Containers and Iterators, in _Programming: Principles and Practice using C++_
+Read Chapter 20, Containers and Iterators, in _Programming: Principles and Practice using C++_.
 
 Answer the following questions in the Gradescope assignment:
 1. What is an STL sequence?
