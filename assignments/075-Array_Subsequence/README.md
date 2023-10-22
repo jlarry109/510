@@ -22,3 +22,6 @@ This assignment repeats a Python assignment, but using C++.
 3. You should then create a `main.cpp` along with a Makefile to test and validate
    your implementation.
 4. Submit `maxSeq.hpp` and `maxSeq.cpp` to the Gradescope assignment.
+
+
+As an example, `int a[] = {1, 2, 1, 3, 5, 8, 2, 4, 6, 9}` has a max subsequence length of 4.
