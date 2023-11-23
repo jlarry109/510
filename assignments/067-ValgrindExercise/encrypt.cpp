@@ -23,6 +23,7 @@ void encrypt(ifstream &f, int key, ofstream &outfile) {
         }
         outfile << *line << "\n";
     }
+    delete line;
 }
 
 
@@ -49,7 +50,7 @@ int main(int argc, char **argv) {
         return EXIT_FAILURE;
     }
 
-    char *outFileName =  new char [(strlen(argv[2]) + 4)];
+    char *outFileName =  new char [(strlen(argv[2]) + 5)];
 
     strcpy(outFileName, argv[2]);
     strcat(outFileName, ".enc");
@@ -60,6 +61,6 @@ int main(int argc, char **argv) {
         return EXIT_FAILURE;
     }
     encrypt(inputFile,key, outFile);
-    
+    delete [] outFileName;
     return EXIT_SUCCESS;
 }

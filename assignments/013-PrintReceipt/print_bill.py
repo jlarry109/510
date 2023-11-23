@@ -27,4 +27,3 @@ def print_receipt(subtotal, tax_rate, tip_rate):
     print("     Tip: ${:>10}".format(tips))
     print("           {}".format("=========="))
     print("   Total: ${:>10}".format(total))
-    

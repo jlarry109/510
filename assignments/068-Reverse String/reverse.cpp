@@ -3,8 +3,18 @@
 #include <iostream>
 using namespace std;
 
-void reverse(string &str) {
+std::string reverseHelper(const std::string & s, std::string & ans, size_t index) {
+  if (index == s.length()) {
+    return ans;
+  }
+  ans[index] = s[s.length() - index - 1];
+  return reverseHelper(s, ans, ++index);
+}
+
+std::string  reverse(string &str) {
   //WRITE ME
+  std::string ans(str.length(), '\0');
+  return reverseHelper(str, ans, 0);
 }
 
 int main(void) {
@@ -21,7 +31,7 @@ int main(void) {
 
 
     for (string test: strings) {
-        reverse(test);
+        test = reverse(test);
         cout << test << endl;
     }
 

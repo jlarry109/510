@@ -1,0 +1,749 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Darwin - 21.6.0 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0;-isystem;/Users/JL/opt/anaconda3/include
+      Id flags:  
+      
+      The output was:
+      1
+      ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libc++.tbd' for architecture x86_64
+      clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0;-isystem;/Users/JL/opt/anaconda3/include
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-Pt4ML4"
+      binary: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-Pt4ML4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-Pt4ML4'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_18b15/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_18b15.dir/build.make CMakeFiles/cmTC_18b15.dir/build
+        Building CXX object CMakeFiles/cmTC_18b15.dir/CMakeCXXCompilerABI.cpp.o
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_18b15.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_18b15.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_18b15.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 12.0.0
+        Target: x86_64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/JL/opt/anaconda3/bin
+        clang-12: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/Users/JL/opt/anaconda3/bin/clang-12" -cc1 -triple x86_64-apple-macosx11.3.0 -Wundef-prefix=TARGET_OS_OSX -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -debugger-tuning=lldb -target-linker-version 274.2 -v -resource-dir /Users/JL/opt/anaconda3/lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_18b15.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_18b15.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /Users/JL/opt/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -stdlib=libc++ -internal-isystem /Users/JL/opt/anaconda3/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/JL/opt/anaconda3/lib/clang/12.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -std=c++14 -fdeprecated-macro -fdebug-compilation-dir /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-Pt4ML4 -ferror-limit 19 -fvisibility-inlines-hidden -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_18b15.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 12.0.0 based upon LLVM 12.0.0 default target x86_64-apple-darwin21.6.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/JL/opt/anaconda3/include
+         /Users/JL/opt/anaconda3/bin/../include/c++/v1
+         /Users/JL/opt/anaconda3/lib/clang/12.0.0/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_18b15
+        /usr/local/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18b15.dir/link.txt --verbose=1
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_18b15.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_18b15 
+        clang version 12.0.0
+        Target: x86_64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/JL/opt/anaconda3/bin
+         "/Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/JL/opt/anaconda3/lib/libLTO.12.dylib -dynamic -arch x86_64 -macosx_version_min 11.3.0 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_18b15 -L/Users/JL/opt/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/JL/opt/anaconda3/lib -v CMakeFiles/cmTC_18b15.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/JL/opt/anaconda3/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:ld64-530
+        BUILD 05:01:35 Aug  4 2021
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/Users/JL/opt/anaconda3/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+        ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+        clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_18b15] Error 1
+        make: *** [cmTC_18b15/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++"
+    directories:
+      source: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-v1f7RQ"
+      binary: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-v1f7RQ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-v1f7RQ'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_eb650/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_eb650.dir/build.make CMakeFiles/cmTC_eb650.dir/build
+        Building CXX object CMakeFiles/cmTC_eb650.dir/testCXXCompiler.cxx.o
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -MD -MT CMakeFiles/cmTC_eb650.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_eb650.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_eb650.dir/testCXXCompiler.cxx.o -c /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-v1f7RQ/testCXXCompiler.cxx
+        Linking CXX executable cmTC_eb650
+        /usr/local/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb650.dir/link.txt --verbose=1
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib  CMakeFiles/cmTC_eb650.dir/testCXXCompiler.cxx.o -o cmTC_eb650 
+        ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+        clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_eb650] Error 1
+        make: *** [cmTC_eb650/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0;-isystem;/Users/JL/opt/anaconda3/include
+      Id flags:  
+      
+      The output was:
+      1
+      ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libc++.tbd' for architecture x86_64
+      clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0;-isystem;/Users/JL/opt/anaconda3/include
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-OITSkY"
+      binary: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-OITSkY"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-OITSkY'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b6fb5/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b6fb5.dir/build.make CMakeFiles/cmTC_b6fb5.dir/build
+        Building CXX object CMakeFiles/cmTC_b6fb5.dir/CMakeCXXCompilerABI.cpp.o
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_b6fb5.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b6fb5.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b6fb5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 12.0.0
+        Target: x86_64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/JL/opt/anaconda3/bin
+        clang-12: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/Users/JL/opt/anaconda3/bin/clang-12" -cc1 -triple x86_64-apple-macosx11.3.0 -Wundef-prefix=TARGET_OS_OSX -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -debugger-tuning=lldb -target-linker-version 274.2 -v -resource-dir /Users/JL/opt/anaconda3/lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_b6fb5.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_b6fb5.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /Users/JL/opt/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -stdlib=libc++ -internal-isystem /Users/JL/opt/anaconda3/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/JL/opt/anaconda3/lib/clang/12.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -std=c++14 -fdeprecated-macro -fdebug-compilation-dir /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-OITSkY -ferror-limit 19 -fvisibility-inlines-hidden -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_b6fb5.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 12.0.0 based upon LLVM 12.0.0 default target x86_64-apple-darwin21.6.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/JL/opt/anaconda3/include
+         /Users/JL/opt/anaconda3/bin/../include/c++/v1
+         /Users/JL/opt/anaconda3/lib/clang/12.0.0/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_b6fb5
+        /usr/local/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6fb5.dir/link.txt --verbose=1
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_b6fb5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b6fb5 
+        clang version 12.0.0
+        Target: x86_64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/JL/opt/anaconda3/bin
+         "/Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/JL/opt/anaconda3/lib/libLTO.12.dylib -dynamic -arch x86_64 -macosx_version_min 11.3.0 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_b6fb5 -L/Users/JL/opt/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/JL/opt/anaconda3/lib -v CMakeFiles/cmTC_b6fb5.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/JL/opt/anaconda3/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:ld64-530
+        BUILD 05:01:35 Aug  4 2021
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/Users/JL/opt/anaconda3/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+        ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+        clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_b6fb5] Error 1
+        make: *** [cmTC_b6fb5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++"
+    directories:
+      source: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-WkY5Yn"
+      binary: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-WkY5Yn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-WkY5Yn'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_94e49/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_94e49.dir/build.make CMakeFiles/cmTC_94e49.dir/build
+        Building CXX object CMakeFiles/cmTC_94e49.dir/testCXXCompiler.cxx.o
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -MD -MT CMakeFiles/cmTC_94e49.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_94e49.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_94e49.dir/testCXXCompiler.cxx.o -c /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-WkY5Yn/testCXXCompiler.cxx
+        Linking CXX executable cmTC_94e49
+        /usr/local/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94e49.dir/link.txt --verbose=1
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib  CMakeFiles/cmTC_94e49.dir/testCXXCompiler.cxx.o -o cmTC_94e49 
+        ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+        clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_94e49] Error 1
+        make: *** [cmTC_94e49/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0;-isystem;/Users/JL/opt/anaconda3/include
+      Id flags:  
+      
+      The output was:
+      1
+      ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libc++.tbd' for architecture x86_64
+      clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0;-isystem;/Users/JL/opt/anaconda3/include
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-oJVJxP"
+      binary: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-oJVJxP"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-oJVJxP'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d1f9a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d1f9a.dir/build.make CMakeFiles/cmTC_d1f9a.dir/build
+        Building CXX object CMakeFiles/cmTC_d1f9a.dir/CMakeCXXCompilerABI.cpp.o
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_d1f9a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d1f9a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d1f9a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 12.0.0
+        Target: x86_64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/JL/opt/anaconda3/bin
+        clang-12: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/Users/JL/opt/anaconda3/bin/clang-12" -cc1 -triple x86_64-apple-macosx11.3.0 -Wundef-prefix=TARGET_OS_OSX -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -debugger-tuning=lldb -target-linker-version 274.2 -v -resource-dir /Users/JL/opt/anaconda3/lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_d1f9a.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_d1f9a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /Users/JL/opt/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -stdlib=libc++ -internal-isystem /Users/JL/opt/anaconda3/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/JL/opt/anaconda3/lib/clang/12.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -std=c++14 -fdeprecated-macro -fdebug-compilation-dir /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-oJVJxP -ferror-limit 19 -fvisibility-inlines-hidden -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_d1f9a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 12.0.0 based upon LLVM 12.0.0 default target x86_64-apple-darwin21.6.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/JL/opt/anaconda3/include
+         /Users/JL/opt/anaconda3/bin/../include/c++/v1
+         /Users/JL/opt/anaconda3/lib/clang/12.0.0/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_d1f9a
+        /usr/local/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1f9a.dir/link.txt --verbose=1
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_d1f9a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d1f9a 
+        clang version 12.0.0
+        Target: x86_64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/JL/opt/anaconda3/bin
+         "/Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/JL/opt/anaconda3/lib/libLTO.12.dylib -dynamic -arch x86_64 -macosx_version_min 11.3.0 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_d1f9a -L/Users/JL/opt/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/JL/opt/anaconda3/lib -v CMakeFiles/cmTC_d1f9a.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/JL/opt/anaconda3/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:ld64-530
+        BUILD 05:01:35 Aug  4 2021
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/Users/JL/opt/anaconda3/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+        ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+        clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_d1f9a] Error 1
+        make: *** [cmTC_d1f9a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++"
+    directories:
+      source: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-w91xOF"
+      binary: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-w91xOF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-w91xOF'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ccd46/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ccd46.dir/build.make CMakeFiles/cmTC_ccd46.dir/build
+        Building CXX object CMakeFiles/cmTC_ccd46.dir/testCXXCompiler.cxx.o
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -MD -MT CMakeFiles/cmTC_ccd46.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_ccd46.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_ccd46.dir/testCXXCompiler.cxx.o -c /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-w91xOF/testCXXCompiler.cxx
+        Linking CXX executable cmTC_ccd46
+        /usr/local/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccd46.dir/link.txt --verbose=1
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib  CMakeFiles/cmTC_ccd46.dir/testCXXCompiler.cxx.o -o cmTC_ccd46 
+        ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+        clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_ccd46] Error 1
+        make: *** [cmTC_ccd46/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0;-isystem;/Users/JL/opt/anaconda3/include
+      Id flags:  
+      
+      The output was:
+      1
+      ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libc++.tbd' for architecture x86_64
+      clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0;-isystem;/Users/JL/opt/anaconda3/include
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-ubicoc"
+      binary: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-ubicoc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-ubicoc'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b2626/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b2626.dir/build.make CMakeFiles/cmTC_b2626.dir/build
+        Building CXX object CMakeFiles/cmTC_b2626.dir/CMakeCXXCompilerABI.cpp.o
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_b2626.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b2626.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b2626.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 12.0.0
+        Target: x86_64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/JL/opt/anaconda3/bin
+        clang-12: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/Users/JL/opt/anaconda3/bin/clang-12" -cc1 -triple x86_64-apple-macosx11.3.0 -Wundef-prefix=TARGET_OS_OSX -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -debugger-tuning=lldb -target-linker-version 274.2 -v -resource-dir /Users/JL/opt/anaconda3/lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_b2626.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_b2626.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /Users/JL/opt/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -stdlib=libc++ -internal-isystem /Users/JL/opt/anaconda3/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/JL/opt/anaconda3/lib/clang/12.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -std=c++14 -fdeprecated-macro -fdebug-compilation-dir /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-ubicoc -ferror-limit 19 -fvisibility-inlines-hidden -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_b2626.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 12.0.0 based upon LLVM 12.0.0 default target x86_64-apple-darwin21.6.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/JL/opt/anaconda3/include
+         /Users/JL/opt/anaconda3/bin/../include/c++/v1
+         /Users/JL/opt/anaconda3/lib/clang/12.0.0/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_b2626
+        /usr/local/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2626.dir/link.txt --verbose=1
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_b2626.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b2626 
+        clang version 12.0.0
+        Target: x86_64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/JL/opt/anaconda3/bin
+         "/Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/JL/opt/anaconda3/lib/libLTO.12.dylib -dynamic -arch x86_64 -macosx_version_min 11.3.0 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_b2626 -L/Users/JL/opt/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/JL/opt/anaconda3/lib -v CMakeFiles/cmTC_b2626.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/JL/opt/anaconda3/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:ld64-530
+        BUILD 05:01:35 Aug  4 2021
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/Users/JL/opt/anaconda3/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+        ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+        clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_b2626] Error 1
+        make: *** [cmTC_b2626/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++"
+    directories:
+      source: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-9UWyKS"
+      binary: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-9UWyKS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-9UWyKS'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.27.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_50646/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_50646.dir/build.make CMakeFiles/cmTC_50646.dir/build
+        Building CXX object CMakeFiles/cmTC_50646.dir/testCXXCompiler.cxx.o
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -MD -MT CMakeFiles/cmTC_50646.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_50646.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_50646.dir/testCXXCompiler.cxx.o -c /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-9UWyKS/testCXXCompiler.cxx
+        Linking CXX executable cmTC_50646
+        /usr/local/Cellar/cmake/3.27.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50646.dir/link.txt --verbose=1
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib  CMakeFiles/cmTC_50646.dir/testCXXCompiler.cxx.o -o cmTC_50646 
+        ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+        clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_50646] Error 1
+        make: *** [cmTC_50646/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Darwin - 21.6.0 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0;-isystem;/Users/JL/opt/anaconda3/include
+      Id flags:  
+      
+      The output was:
+      1
+      ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libc++.tbd' for architecture x86_64
+      clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+      Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0;-isystem;/Users/JL/opt/anaconda3/include
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-4cQIK0"
+      binary: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-4cQIK0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-4cQIK0'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8a96a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8a96a.dir/build.make CMakeFiles/cmTC_8a96a.dir/build
+        Building CXX object CMakeFiles/cmTC_8a96a.dir/CMakeCXXCompilerABI.cpp.o
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_8a96a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_8a96a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_8a96a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 12.0.0
+        Target: x86_64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/JL/opt/anaconda3/bin
+        clang-12: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/Users/JL/opt/anaconda3/bin/clang-12" -cc1 -triple x86_64-apple-macosx11.3.0 -Wundef-prefix=TARGET_OS_OSX -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -debugger-tuning=lldb -target-linker-version 274.2 -v -resource-dir /Users/JL/opt/anaconda3/lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_8a96a.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_8a96a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /Users/JL/opt/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -stdlib=libc++ -internal-isystem /Users/JL/opt/anaconda3/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/JL/opt/anaconda3/lib/clang/12.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -std=c++14 -fdeprecated-macro -fdebug-compilation-dir /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-4cQIK0 -ferror-limit 19 -fvisibility-inlines-hidden -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_8a96a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 12.0.0 based upon LLVM 12.0.0 default target x86_64-apple-darwin21.6.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/JL/opt/anaconda3/include
+         /Users/JL/opt/anaconda3/bin/../include/c++/v1
+         /Users/JL/opt/anaconda3/lib/clang/12.0.0/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_8a96a
+        /usr/local/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a96a.dir/link.txt --verbose=1
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_8a96a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8a96a 
+        clang version 12.0.0
+        Target: x86_64-apple-darwin13.4.0
+        Thread model: posix
+        InstalledDir: /Users/JL/opt/anaconda3/bin
+         "/Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/JL/opt/anaconda3/lib/libLTO.12.dylib -dynamic -arch x86_64 -macosx_version_min 11.3.0 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_8a96a -L/Users/JL/opt/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/JL/opt/anaconda3/lib -v CMakeFiles/cmTC_8a96a.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/JL/opt/anaconda3/lib/clang/12.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:ld64-530
+        BUILD 05:01:35 Aug  4 2021
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/Users/JL/opt/anaconda3/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+        ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+        clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_8a96a] Error 1
+        make: *** [cmTC_8a96a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++"
+    directories:
+      source: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-4xQeIU"
+      binary: "/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-4xQeIU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-4xQeIU'
+        
+        Run Build Command(s): /usr/local/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c2cd3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c2cd3.dir/build.make CMakeFiles/cmTC_c2cd3.dir/build
+        Building CXX object CMakeFiles/cmTC_c2cd3.dir/testCXXCompiler.cxx.o
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -MD -MT CMakeFiles/cmTC_c2cd3.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_c2cd3.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_c2cd3.dir/testCXXCompiler.cxx.o -c /Users/JL/Documents/fintech510/fintech510-studentrepository/assignments/065-Vector-PPP17/build/CMakeFiles/CMakeScratch/TryCompile-4xQeIU/testCXXCompiler.cxx
+        Linking CXX executable cmTC_c2cd3
+        /usr/local/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2cd3.dir/link.txt --verbose=1
+        /Users/JL/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0 -isystem /Users/JL/opt/anaconda3/include  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/JL/opt/anaconda3/lib -L/Users/JL/opt/anaconda3/lib  CMakeFiles/cmTC_c2cd3.dir/testCXXCompiler.cxx.o -o cmTC_c2cd3 
+        ld: unsupported tapi file type '!tapi-tbd' in YAML file '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+        clang-12: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_c2cd3] Error 1
+        make: *** [cmTC_c2cd3/fast] Error 2
+        
+      exitCode: 2
+...

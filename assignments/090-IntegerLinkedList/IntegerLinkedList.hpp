@@ -1,9 +1,11 @@
 #ifndef __INT_LINKEDLIST__H__
 #define __INT_LINKEDLIST__H__
-
+#include <exception>
+#include <stdexcept>
 #include <ostream>
 #include <string>
-
+#include <iostream>
+#include <limits>
 class IntegerLinkedListNode {
     public:
     int data;    // stores the digit (0-9)
