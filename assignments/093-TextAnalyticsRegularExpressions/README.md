@@ -31,7 +31,7 @@ Finally, you must write additional regular expressions to find specific text pat
    b. Find all words that end in 'x'
 
    c. A common rule of thumb in spelling English words is "i before e except after c".
-      Find all words that contract this guideline.
+      Find all words that contradict this guideline.
 
    d. Find words containing four consecutive consonants.
 
