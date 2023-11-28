@@ -56,6 +56,7 @@ daisy
 ...
 A
 ```
+**Note: do not escape the backslash character!**
 
 1. Including the stop words, which word appears most frequently?
 2. Excluding stop words, which word appears most frequently?
