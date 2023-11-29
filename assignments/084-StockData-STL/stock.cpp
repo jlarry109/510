@@ -33,6 +33,26 @@ int main(int argc, char *argv[]) {
     }
    
     // Insert assignment code
+    // Calculate daily rates of return
+    std::vector<double> returns;
+    for (size_t i = 1; i < data.size(); ++i) {
+        double rateOfReturn = data[i].rateOfReturn(data[i - 1]);
+        returns.push_back(rateOfReturn);
+    }
 
+    // Calculate average, max, and min using STL functions
+    double averageReturn = accumulate(returns.begin(), returns.end(), 0.0) / returns.size();
+    auto maxReturnIter = max_element(returns.begin(), returns.end());
+    auto minReturnIter = min_element(returns.begin(), returns.end());
+
+    // Find corresponding dates for max and min returns
+    size_t maxIndex = distance(returns.begin(), maxReturnIter);
+    size_t minIndex = distance(returns.begin(), minReturnIter);
+
+    // Print results
+    std::cout << std::fixed << std::setprecision(2);
+    std::cout << "Average Daily Return: " << averageReturn << "%" << std::endl;
+    std::cout << "Largest Gain: " << *maxReturnIter << "% on " << data[maxIndex + 1].date << std::endl;
+    std::cout << "Largest Loss: " << *minReturnIter << "% on " << data[minIndex + 1].date << std::endl;
     return EXIT_SUCCESS;
 }

@@ -1,0 +1,17 @@
+#success
+universe.csv correlation.csv
+
+#error: line1 of universe file lacks a comma when it shouldn't
+universe1.csv correlation1.csv
+
+#error: Last line of correlation file lacks a comma when it shouldn't
+universe2.csv correlation2.csv
+
+#error: line1 of universe file has 0.3a2690
+universe3.csv correlation3.csv
+
+#error: line 1 of universe has an empty entry
+universe4.csv correlation4.csv
+
+#error: line1 of correlation has an empty entry
+universe5.csv correlation5.csv
