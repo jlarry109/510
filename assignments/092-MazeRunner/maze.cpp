@@ -97,6 +97,29 @@ void solveMazeRecursive(Grid &maze) {
 
 bool solveMazeRecursive(Grid &maze, int row, int col) {
     // Only alter this function
+    // Base case: if we reached the finish cell, return true
+    if (maze[row][col] == 'F') {
+        return true;
+    }
+
+    // If the current cell is a wall or has already been visited, return false
+    if (maze[row][col] == 'X' || maze[row][col] == '.' || maze[row][col] == 'b') {
+        return false;
+    }
+
+    // Mark the current cell as visited
+    maze[row][col] = '.';
+
+    // Try moving in all four directions: up, down, right, left
+    if (solveMazeRecursive(maze, row - 1, col) ||    // up
+        solveMazeRecursive(maze, row + 1, col) ||    // down
+        solveMazeRecursive(maze, row, col + 1) ||    // right
+        solveMazeRecursive(maze, row, col - 1)) {    // left
+        return true;
+    }
+
+    // If none of the paths lead to the finish, backtrack
+    maze[row][col] = 'b';  // mark as backtracked
     return false; // only present so initial code will compile
 }
 
