@@ -1,0 +1,10 @@
+the
+gatsby
+\b\w*zz\w*\b
+\b\w*x\b
+\b\w*cie\w*\b|\b\w*[^c]ei\w*\b
+\b(?:\w*[^aeiouyAEIOUY\d\W]{4}\w*)\b 
+\b\d{5}(?:-\d{4})?\b
+\b\d{2}/\d{2}/(\d{4})\b
+4\d{3}\s\d{4}\s\d{4}\s\d{4}\b 
+D
