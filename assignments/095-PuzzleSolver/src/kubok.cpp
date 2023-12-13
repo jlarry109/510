@@ -1,5 +1,25 @@
 #include "kubok.hpp"
 using namespace std;
+int safeStringToInt(const std::string& s) {
+    try {
+        size_t pos;  // To store the position of the first invalid character
+        int result = std::stoi(s, &pos);
+
+        // Check if there are any invalid characters after the valid integer
+        if (pos < s.length()) {
+            std::cerr << "Error: Invalid characters after the integer." << std::endl;
+            exit(EXIT_FAILURE);  // Or handle the error in an appropriate way
+        }
+
+        return result;
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Error: Invalid argument. Not a valid integer." << std::endl;
+        exit(EXIT_FAILURE);  // Or handle the error in an appropriate way
+    } catch (const std::out_of_range& e) {
+        std::cerr << "Error: Out of range. The integer is too large or too small." << std::endl;
+        exit(EXIT_FAILURE);  // Or handle the error in an appropriate way
+    }
+}
 /*
     Validates the input for the Kubok puzzle by checking the following criteria:
     1. Ensures that the sizes of colSum, rowSum, and grid are all equal to SIZE.
@@ -63,10 +83,9 @@ bool Kubok::isValidInput() {
     Exits with EXIT_FAILURE if the number of entries on the current row is not equal to SIZE.
 */
 void Kubok::splitCommaSeparatedLines(std::vector<int> & ans, const std::string & line) {
-    std::string token;
     std::stringstream ssline(line);
     size_t i = 0;
-    for (std::string token; getline(ssline, token, ','); ans[i++] = std::stoi(token));
+    for (std::string token; getline(ssline, token, ','); ans[i++] = safeStringToInt(token));
     if (i != SIZE) {
         std::cerr << "Invalid number of entries on current row. Column " << i + 1 << " is missing" << std::endl;
         exit(EXIT_FAILURE);
@@ -299,17 +318,25 @@ void Kubok::processFile(const std::string & fileName) {
 
     getline(inputFile, line); //Read "row sums:" line
     parseColRowSumLines(rowSum, line, "row sums");
-
+    
     std::getline(inputFile, line); //Read "grid:"
-    assert(line == "grid:");
+    if(line != "grid:") {
+        std::cerr << "Found " << "'" << line << "'" << " instead of 'grid:'" << std::endl;
+        exit(EXIT_FAILURE);
+    }
+    
     size_t i = 0;
     while(std::getline(inputFile, line)) {
+        if (i >= SIZE) {
+            std::cerr << "Incorrect number of rows in grid" << std::endl;
+            exit(EXIT_FAILURE);
+    }
         splitCommaSeparatedLines(grid[i], line);
         i++;
     }
     if (i != SIZE) {
-        std::cerr << "Incorrect number of rows in grid" << std::endl;
-        exit(EXIT_FAILURE);
+            std::cerr << "Incorrect number of rows in grid" << std::endl;
+            exit(EXIT_FAILURE);
     }
     inputFile.close();
     // Validate input
@@ -385,6 +412,7 @@ Kubok::Kubok() : rowSum(SIZE, 0), colSum (SIZE, 0), grid(SIZE, std::vector<int>(
 Kubok::Kubok(const std::string fileName) : rowSum(SIZE, 0), colSum(SIZE, 0), grid(SIZE, std::vector<int>(SIZE, 0)) {
     processFile(fileName);
 }
+
 
 /*
     Destructor for the Kubok puzzle.
